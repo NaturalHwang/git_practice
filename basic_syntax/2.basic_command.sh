@@ -62,3 +62,6 @@ git diff A B
 git diff commitId1 commitId2
 git diff A브랜치 B브랜치
 
+# git fetch
+# 원격의 변경사항을 로컬에 가져오되 병합은 하지 않는 것
+# 비교 : git pull origin master와 git fetch origin master 비교
