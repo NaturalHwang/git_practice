@@ -12,8 +12,6 @@ git push origin 브랜치명
 
 # 2. 제3자인증(oauth)방식
 
-
-
 # git 프로젝트 생성 방법 2가지
 # 방법1. 원격 repo 생성 후 clone
 
@@ -33,3 +31,27 @@ git remote set-url origin 레포주소
 
 # git 설정 정보 조회
 git config --list
+
+# 타인 레포 clone 방법 2가지
+# 1) 커밋 이력 그대로 가져오기
+git clone 타인 레포 주소
+# 해당 폴더로 이동 후 git 명령어
+git remote set-url origin 내레포주소
+git push origin main # 또는 master
+# 별도의 add commit 필요 없음
+
+# 2) 커밋 이력 없이 가져오기
+git clone 타인 레포 주소
+# 해당 폴더로 이동 후에 .git 폴더 삭제 후
+git init
+git remote add origin 내레포주소
+git add .
+git commit -m ""
+git push origin main # 또는 master
+
+# 사용자 지정 방법
+# 전역자 사용자(name, email) 지정
+git config --global user.name "jasonhwang"
+git config --global user.email "junghahwang0601@gmail.com"
+
+# 지역적 사용자(name, email) 지정
