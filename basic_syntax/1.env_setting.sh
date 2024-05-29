@@ -55,3 +55,17 @@ git config --global user.name "jasonhwang"
 git config --global user.email "junghahwang0601@gmail.com"
 
 # 지역적 사용자(name, email) 지정
+# 현재 레파지토리에 한해서만 사용자 변경
+git config --local user.name "jasonhwang"
+git config --local user.email "junghahwang0601@gmail.com"
+
+# config 내용 조회
+# repository, 이름, email 등...
+git config --list
+# 사용자 이름 조회
+git config user.name
+# 사용자 이메일 조회
+git config user.email
+
+# git ignore 파일 실습
+# 확장자 .gitignore 파일 생성 후 git 추적 제외 대상 나열/build 파일들, 보안상 올리면 안되는 파일, 로그 파일...
