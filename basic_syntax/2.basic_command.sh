@@ -46,7 +46,7 @@ git checkout .
 # staging area에서 취소
 git reset
 # commit 이후의 취소
-git reset HEAD~1
-git reset HEAD^
+git reset HEAD~1 # 위 아래 둘 다 상관X
+git reset HEAD^  # 많이 사용함
 # push 이후의 취소
-git revert 커밋ID
+git revert 커밋ID #아예 없었던 일이 되지는 않음. 오로지 되돌리기
